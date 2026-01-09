@@ -45,6 +45,9 @@ final class Smart_Contact_Form {
 
         // Enqueue assets
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ) );
+
+        // Enqueue Visual Builder assets
+        add_action( 'et_fb_enqueue_assets', array( $this, 'enqueue_builder_assets' ) );
     }
 
     /**
@@ -84,6 +87,30 @@ final class Smart_Contact_Form {
             'ajax_url' => admin_url( 'admin-ajax.php' ),
             'nonce'    => wp_create_nonce( 'scf_form_nonce' ),
         ) );
+    }
+
+    /**
+     * Enqueue Visual Builder assets
+     */
+    public function enqueue_builder_assets() {
+        $bundle_path = SCF_PLUGIN_DIR . 'assets/js/builder-frontend.bundle.js';
+
+        if ( file_exists( $bundle_path ) ) {
+            wp_enqueue_script(
+                'smart-contact-form-builder',
+                SCF_PLUGIN_URL . 'assets/js/builder-frontend.bundle.js',
+                array( 'react', 'react-dom', 'jquery' ),
+                SCF_VERSION,
+                true
+            );
+        }
+
+        wp_enqueue_style(
+            'smart-contact-form',
+            SCF_PLUGIN_URL . 'assets/css/smart-contact-form.css',
+            array(),
+            SCF_VERSION
+        );
     }
 
     /**

@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class SCF_Smart_Contact_Form extends ET_Builder_Module {
 
     public $slug       = 'scf_smart_contact_form';
-    public $vb_support = 'partial';
+    public $vb_support = 'on';
 
     protected $module_credits = array(
         'module_uri' => 'https://indulta.org',
