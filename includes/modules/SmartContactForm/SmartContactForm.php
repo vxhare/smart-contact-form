@@ -13,9 +13,9 @@ class SCF_Smart_Contact_Form extends ET_Builder_Module {
     public $vb_support = 'on';
 
     protected $module_credits = array(
-        'module_uri' => 'https://indulta.org',
-        'author'     => 'Indulta',
-        'author_uri' => 'https://indulta.org',
+        'module_uri' => 'https://github.com/vxhare/smart-contact-form',
+        'author'     => 'syddakid',
+        'author_uri' => 'https://www.reddit.com/user/syddakid32/',
     );
 
     public function init() {

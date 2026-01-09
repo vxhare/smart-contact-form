@@ -73,4 +73,4 @@ GPL-2.0+
 
 ## Credits
 
-Built by syddakid
+Built by [syddakid32](https://www.reddit.com/user/syddakid32/)

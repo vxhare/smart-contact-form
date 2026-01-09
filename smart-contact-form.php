@@ -4,8 +4,8 @@
  * Plugin URI: https://indulta.org
  * Description: A lightweight Divi Builder module for contact forms with conditional email routing based on department selection.
  * Version: 1.0.0
- * Author: Indulta
- * Author URI: https://indulta.org
+ * Author: syddakid
+ * Author URI: https://www.reddit.com/user/syddakid32/
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: smart-contact-form
