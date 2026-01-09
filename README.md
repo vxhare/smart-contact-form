@@ -73,4 +73,4 @@ GPL-2.0+
 
 ## Credits
 
-Built by [Indulta](https://indulta.org) - AI-powered legal assistance and education for underserved communities.
+Built by syddakid
